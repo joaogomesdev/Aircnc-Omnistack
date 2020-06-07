@@ -14,7 +14,7 @@ const BookingController = require('./controllers/BookingController');
 routes.post('/sessions' , SessionController.store);
 
 routes.get('/spots' , SpotController.index);
-routes.post('/spots' ,upload.single('thumnail'), SpotController.store);
+routes.post('/spots' ,upload.single('thumbnail'), SpotController.store);
 
 routes.get('/profile' , ProfileController.show);
 routes.post('/spots/:spot_id/bookings' , BookingController.store);
